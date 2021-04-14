@@ -5,16 +5,14 @@ from time import sleep
 import subprocess
 from playsound import playsound
 
-r_time = 1, 2
-c_time =
 
 def request_start():
     ask = input("press enter to start")
     return ask
 
 def r():
-    rantime = random.randint(1, 2)*2
-    print("what time will it be??")
+    rantime = random.randint(2, 4)
+    print("what r time will it be??")
     sleep(rantime*60)
     print("yay")
     playsound('ding.mp3')
@@ -23,8 +21,8 @@ def r():
 
 
 def c():
-    rantime = random.randint(1, 2)*2
-    print("what time will it be??")
+    rantime = random.randint(1, 2)
+    print("what c time will it be??")
     sleep(rantime*60)
     print("yay")
     playsound('ding.mp3')
@@ -33,5 +31,11 @@ def c():
 
 
 request_start()
+r()
+c()
+r()
+c()
+r()
+c()
 r()
 c()
