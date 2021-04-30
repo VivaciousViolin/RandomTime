@@ -11,7 +11,7 @@ def request_start():
     return ask
 
 def r():
-    rantime = random.randint(2, 4)
+    rantime = random.uniform(2, 4)*2
     print("what r time will it be??")
     sleep(rantime*60)
     print("yay")
@@ -21,7 +21,7 @@ def r():
 
 
 def c():
-    rantime = random.randint(1, 2)
+    rantime = random.uniform(1, 2)
     print("what c time will it be??")
     sleep(rantime*60)
     print("yay")
